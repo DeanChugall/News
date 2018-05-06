@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import xyz.cugalj.news.Controler.JsonObjectNewsApi;
-import xyz.cugalj.news.Controler.VolleyResponseListener;
+import xyz.cugalj.news.controler.JsonObjectNewsApi;
+import xyz.cugalj.news.controler.VolleyResponseListener;
 import xyz.cugalj.news.model.News;
 
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 //Log.e("VELICINA LISTE: ", Integer.toString(jsonObjectRequest.getNESTO().size()));
 
                 for (News n : jsonObjectNewsApi.getNewsDataArray()) {
-                    Log.e("NASLOV: ", n.getTitle());
+                    Log.e("TITLE: ", n.getTitle() + "  ||  TIME: " + n.getPublishedAt());
                 }
 
             }
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Object response) {
                 Log.e("onResponse ", response.toString());
-                //Log.e("VELICINA ", Integer.toString(jsonObjectNewsApi.getNewsDataArray().size()));
+                //Log.e("SIZE ", Integer.toString(jsonObjectNewsApi.getNewsDataArray().size()));
             }
 
             @Override
