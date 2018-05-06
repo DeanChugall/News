@@ -1,4 +1,4 @@
-package xyz.cugalj.news.Controler;
+package xyz.cugalj.news.controler;
 
 public interface VolleyResponseListener {
 

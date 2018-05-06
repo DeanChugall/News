@@ -1,4 +1,4 @@
-package xyz.cugalj.news.Controler;
+package xyz.cugalj.news.controler;
 
 import android.content.Context;
 import android.util.Log;
