@@ -11,10 +11,10 @@ import xyz.cugalj.news.controler.JsonObjectNewsApi;
 import xyz.cugalj.news.controler.VolleyResponseListener;
 import xyz.cugalj.news.model.News;
 
-
 public class MainActivity extends AppCompatActivity {
 
     private JsonObjectNewsApi jsonObjectNewsApi;
+    TextView txtNaslov;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
