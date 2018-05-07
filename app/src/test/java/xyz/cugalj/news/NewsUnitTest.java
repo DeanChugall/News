@@ -32,4 +32,5 @@ public class NewsUnitTest {
         String geteed = mainActivity.getFinalUri();
         assertEquals(exepted, geteed);
     }*/
+
 }
