@@ -90,6 +90,7 @@ public class JsonObjectNewsApi {
                 });
 
         NewsJsonSingleton.getInstance(context).addToRequestQueue(jsonObjectRequest);
+        //TODO
     }
 }
 
