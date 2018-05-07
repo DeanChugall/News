@@ -80,8 +80,6 @@ public class JsonObjectNewsApi {
                         } catch (JSONException e) {
                             Log.e("ERROR", e.getLocalizedMessage());
                         }
-
-
                         listener.onResponse(response);
                     }
                 }, new Response.ErrorListener() {
