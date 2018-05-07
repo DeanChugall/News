@@ -18,7 +18,6 @@ import xyz.cugalj.news.model.NewsApi;
 
 public class JsonObjectNewsApi {
 
-
     public ArrayList<News> getNewsDataArray() {
         return newsDataArray;
     }
@@ -90,7 +89,6 @@ public class JsonObjectNewsApi {
                 });
 
         NewsJsonSingleton.getInstance(context).addToRequestQueue(jsonObjectRequest);
-        //TODO
     }
 }
 
