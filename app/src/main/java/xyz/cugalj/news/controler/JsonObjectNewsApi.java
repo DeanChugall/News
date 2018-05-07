@@ -51,7 +51,6 @@ public class JsonObjectNewsApi {
                                 JSONObject newsSourceObject = newArticleObject.getJSONObject("source");
                                 String name = newsSourceObject.getString("name");
 
-
                                 String author = newArticleObject.getString("author");
 
                                 if (author == "null") {
