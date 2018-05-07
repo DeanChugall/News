@@ -14,9 +14,7 @@ import xyz.cugalj.news.model.News;
 
 public class MainActivity extends AppCompatActivity {
 
-
     private JsonObjectNewsApi jsonObjectNewsApi;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
