@@ -51,7 +51,6 @@ public class JsonObjectNewsApi {
                                 JSONObject newsSourceObject = newArticleObject.getJSONObject("source");
                                 String name = newsSourceObject.getString("name");
 
-
                                 String author = newArticleObject.getString("author");
 
                                 if (author == "null") {
@@ -80,8 +79,6 @@ public class JsonObjectNewsApi {
                         } catch (JSONException e) {
                             Log.e("ERROR", e.getLocalizedMessage());
                         }
-
-
                         listener.onResponse(response);
                     }
                 }, new Response.ErrorListener() {
@@ -94,8 +91,6 @@ public class JsonObjectNewsApi {
 
         NewsJsonSingleton.getInstance(context).addToRequestQueue(jsonObjectRequest);
     }
-
-
 }
 
 
