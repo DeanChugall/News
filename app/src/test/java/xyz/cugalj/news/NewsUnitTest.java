@@ -26,8 +26,6 @@ public class NewsUnitTest {
         when(newsApi.constructAPI()).thenReturn(exepted);
         assertEquals(newsApi.constructAPI(), exepted);
     }
-
-
     /*@Test
     public void addition_isCorrect() {
         mainActivity = new MainActivity();
