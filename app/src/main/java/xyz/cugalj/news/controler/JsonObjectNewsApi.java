@@ -18,12 +18,12 @@ import xyz.cugalj.news.model.NewsApi;
 
 public class JsonObjectNewsApi {
 
+
+
+    private ArrayList<News> newsDataArray = new ArrayList<>();
     public ArrayList<News> getNewsDataArray() {
         return newsDataArray;
     }
-
-    private ArrayList<News> newsDataArray;
-
     private String urlBase = "https://newsapi.org/v2/";
     private String category = "top-headlines";
     private String country = "rs";
@@ -38,7 +38,7 @@ public class JsonObjectNewsApi {
 
                     @Override
                     public void onResponse(JSONObject response) {
-                        newsDataArray = new ArrayList<>();
+
                         try {
 
                             JSONArray newsArticle = response.getJSONArray("articles");
